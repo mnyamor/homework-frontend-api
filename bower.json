@@ -1,0 +1,18 @@
+{
+  "name": "homework-frontend-api",
+  "description": "* Python 3.x * Flask * JWT * React * Redux * React-Router 2.0 * React-Router-Redux * Babel 6 * SCSS processing * Webpack",
+  "main": "index.js",
+  "authors": [
+    "“Mary <“mnyamor@gmail.com”>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib/",
+    "test",
+    "tests"
+  ]
+}
