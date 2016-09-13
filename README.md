@@ -20,6 +20,7 @@ Here are some screenshots of the project.
 
 ![screenshot](http://i.imgur.com/F60Vy80.png)
 
+![screenshot](http://i.imgur.com/16tWi2h.png)
 
 ## CLONING THE PROJECT
 
