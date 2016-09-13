@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addNotifications } from '../actions/Notifications';
+import { addNotifications } from '../actions/notifications';
 
 export default function(ComposedComponent) {
   class Authenticate extends React.Component {

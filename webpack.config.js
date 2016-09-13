@@ -16,7 +16,7 @@ export default {
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(), // ensures consistent build hashes
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
@@ -27,7 +27,7 @@ export default {
           path.join(__dirname, 'client'),
           path.join(__dirname, 'server')
         ],
-        loaders: [ 'babel' ],
+        loaders: [ 'babel'],
         exclude: /node_modules/,
       },
       { test: /\.json$/, loader: 'json-loader' },

@@ -25,10 +25,10 @@ class NavigationBar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-inverse row">
-        <div className="container">
+      <nav className="navbar navbar-inverse">
+        <div className="container-fluid">
           <div className="navbar-header">
-            <Link to="/" className="navbar-brand">DBrowser</Link>
+            <Link to="/" className="navbar-brand">DBrowser </Link>
           </div>
 
           <div className="collapse navbar-collapse">

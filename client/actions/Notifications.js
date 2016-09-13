@@ -1,15 +1,15 @@
-import { ADD_FLASH_MESSAGE, DELETE_FLASH_MESSAGE } from '../constants/index';
+import { ADD_NOTIFICATION, DELETE_NOTIFICATION } from '../constants/index';
 
 export function addNotifications(message) {
   return {
-    type: ADD_FLASH_MESSAGE,
+    type: ADD_NOTIFICATION,
     message
   }
 }
 
 export function deleteNotifications(id) {
   return {
-    type: DELETE_FLASH_MESSAGE,
+    type: DELETE_NOTIFICATION,
     id
   }
 }

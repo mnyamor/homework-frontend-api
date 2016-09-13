@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
 
-class FlashMessage extends React.Component {
+export default class Notification extends Component {
+  
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
   }
 
   onClick() {
-    this.props.deleteFlashMessage(this.props.message.id);
+    this.props.deleteNotification(this.props.message.id);
   }
 
   render() {
@@ -25,9 +26,9 @@ class FlashMessage extends React.Component {
   }
 }
 
-FlashMessage.propTypes = {
+Notification.propTypes = {
   message: React.PropTypes.object.isRequired,
-  deleteFlashMessage: React.PropTypes.func.isRequired
+  deleteNotification: React.PropTypes.func.isRequired
 }
 
-export default FlashMessage;
+

@@ -1,10 +1,10 @@
-import { ADD_FLASH_MESSAGE, DELETE_FLASH_MESSAGE } from '../constants/index';
+import { ADD_NOTIFICATION, DELETE_NOTIFICATION } from '../constants/index';
 import { parseJSON } from '../utils/functions';
 import findIndex from 'lodash/findIndex';
 
 export default (state = [], action = {}) => {
   switch(action.type) {
-    case ADD_FLASH_MESSAGE:
+    case ADD_NOTIFICATION:
       return [
         ...state,
         {
@@ -13,7 +13,7 @@ export default (state = [], action = {}) => {
           text: action.message.text
         }
       ];
-    case DELETE_FLASH_MESSAGE:
+    case DELETE_NOTIFICATION:
       const index = findIndex(state, { id: action.id });
       if (index >= 0) {
         return [
